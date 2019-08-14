@@ -24,7 +24,7 @@ from sklearn.model_selection import train_test_split
 #import the necessary libraries for data manipulation, modeling, and visualization
 
 def get(country):
-    df = pd.read_csv("Full data - Sheet1.csv")
+    df = pd.read_csv("input.csv")
     df = df.loc[df['Entity'] == country]
     X = np.array(df.drop('Population', 1))
     y = np.array(df['Population'])
