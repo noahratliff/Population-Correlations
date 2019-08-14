@@ -36,7 +36,7 @@ def get(country):
 #define a function to pull a single country from the dataset into a pandas dataframe
 
 trainX, testX, trainY, testY = train_test_split(X, y, test_size=0.2)
-df = pd.read_csv("Full data - Sheet1.csv")
+df = pd.read_csv("input.csv")
 print(df.Entity.unique())
 
 #Read data into dataframe and print available country names
